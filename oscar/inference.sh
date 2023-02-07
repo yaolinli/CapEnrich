@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=4 python3.7 end_uni_predict.py \
+    --do_predict \
+    --predict_yaml test.yaml \
+    --per_gpu_eval_batch_size 1 \
+    --num_beams 5 \
+    --max_gen_length 40 \
+    --data_dir ./datasets/coco_caption \
+    --output_dir eval_results \
+    --output_file output_3e-4_nctx2_random.json \
+    --eval_model_dir experiments/output_3e-4_nctx2_random/best_checkpoint \
+    --caption_file './eval_results/vinvl_result.json'

@@ -1,3 +1,7 @@
+datasets/annotation/*.json
+oscar/pretrained_model
+oscar/eval_results/GdisCap_with_SCST.json
+oscar/eval_results/NliCap_with_SCST.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
